@@ -12,10 +12,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "replace with service id",
-        "replace with template id",
+        "service_uourluj",
+        "template_vyxmo2a",
         form.current,
-        "replace with user id"
+        "ySHtikMDLp7ELYGcn"
       )
       .then(
         (result) => {
@@ -35,6 +35,10 @@ const Contact = () => {
         <input type="text" name="user_name" />
         <label>Email</label>
         <input type="email" name="user_email" />
+        <label>Date</label>
+        <input type="date" name="date" />
+        <label>time</label>
+        <input type="time" name="time" />
         <label>Message</label>
         <textarea name="message" />
         <input type="submit" value="Send" />
